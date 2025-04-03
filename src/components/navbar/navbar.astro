@@ -5,37 +5,24 @@ import Dropdown from "./dropdown.astro";
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 
 const menuitems = [
-  {
-    title: "Features",
-    path: "#",
-    children: [
-      { title: "Action", path: "/" },
-      { title: "Another action", path: "#" },
-      { title: "Dropdown Submenu", path: "#" },
-      { title: "404 Page", path: "/404" },
-    ],
-  },
-  {
-    title: "Pricing",
-    path: "/pricing",
-  },
-  {
-    title: "About",
-    path: "/about",
-  },
-  {
-    title: "Blog",
-    path: "/blog",
-  },
-  {
-    title: "Contact",
-    path: "/contact",
-  },
-  {
-    title: "Pro Version",
-    badge: true,
-    path: "https://astroship-pro.web3templates.com/",
-  },
+  // Remove or comment out old items
+  // { title: "Features", path: "#", children: [...] },
+  // { title: "Pricing", path: "/pricing" },
+  // { title: "About", path: "/about" },
+  // { title: "Blog", path: "/blog" },
+  // { title: "Contact", path: "/contact" },
+  // { title: "Pro Version", badge: true, path: "..." },
+
+  // Add links for your sections
+  { title: "Safety", path: "#safety" }, // Assuming id="safety"
+  { title: "Importance", path: "#importance" }, // Assuming id="importance"
+  { title: "Clarity", path: "#clarity" }, // Assuming id="clarity"
+  { title: "Comfort", path: "#comfort" }, // Assuming id="comfort"
+  { title: "Practicality", path: "#practicality" }, // Assuming id="practicality"
+  { title: "Science", path: "#science" }, // Assuming id="science"
+  { title: "Gallery", path: "#gallery" }, // Assuming id="gallery"
+  { title: "About", path: "#about" }, // Assuming id="about"
+  // Add other links as needed (e.g., external links, contact)
 ];
 ---
 

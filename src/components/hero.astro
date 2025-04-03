@@ -1,53 +1,96 @@
 ---
 import { Picture } from "astro:assets";
-import heroImage from "@/assets/hero.png";
+// import heroImage from "@/assets/hero.png"; // Removed unused import
 import Link from "@/components/ui/link.astro";
 import { Icon } from "astro-icon/components";
 ---
 
 <main
-  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
+  id="hero"
+  class="grid lg:grid-cols-3 items-stretch lg:gap-x-8 pt-16 md:pt-12">
+  <!-- Removed the Picture component section -->
+  <!-- 
   <div class="py-6 md:order-1 hidden md:block">
     <Picture
       src={heroImage}
-      alt="Astronaut in the air"
+      alt="MyAirHat illustration"
       widths={[200, 400, 600]}
       sizes="(max-width: 800px) 100vw, 620px"
       loading="eager"
       format="avif"
     />
   </div>
-  <div>
-    <h1
-      class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
-      Marketing website done with Astro
+  -->
+  <div class="lg:col-span-2">
+    <h1 class="text-4xl lg:text-5xl xl:text-6xl font-bold">
+      If you need to wear a mask,<br />then you need to try a MyAirHat™
     </h1>
-    <p class="text-lg mt-4 text-slate-600 max-w-xl">
-      Astroship is a starter template for startups, marketing websites & landing
-      pages.<wbr /> Built with Astro.build and TailwindCSS. You can quickly create
-      any website with this starter.
+    <p class="text-2xl mt-4 text-slate-600 max-w-4xl">
+      <i
+        >Independent lab testing confirms that MyAirHat reduces particle
+        inhalation to 19%, compared to 57% with an N95 mask — 3 times fewer
+        particles inhaled.</i
+      >
     </p>
-    <div class="mt-6 flex flex-col sm:flex-row gap-3">
-      <Link
-        href="#"
-        href="https://web3templates.com/templates/astroship-starter-website-template-for-astro"
-        target="_blank"
-        class="flex gap-1 items-center justify-center"
-        rel="noopener">
-        <Icon class="text-white w-5 h-5" name="bx:bxs-cloud-download" />
+  </div>
 
-        Download for Free
-      </Link>
-      <Link
-        size="lg"
-        style="outline"
-        rel="noopener"
-        href="https://github.com/surjithctly/astroship"
-        class="flex gap-1 items-center justify-center"
-        target="_blank">
-        <Icon class="text-black w-4 h-4" name="bx:bxl-github" />
-        GitHub Repo
-      </Link>
+  <div class="mt-8 lg:mt-0 w-full max-w-md">
+    <div class="mb-8">
+      <div class="text-2xl font-semibold text-slate-800 mb-1">N95 Mask</div>
+      <div class="relative rounded h-8">
+        <div
+          class="absolute top-0 left-0 h-8 rounded flex items-center justify-end pr-2 text-white overflow-hidden"
+          style="width: 57%; background: linear-gradient(to right, #8B0000, #FF0000);">
+          <div class="text-lg">57%</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-8">
+      <div class="text-2xl font-semibold text-slate-800 mb-1">MyAirHat™</div>
+      <div class="relative rounded h-8">
+        <div
+          class="absolute top-0 left-0 h-8 rounded flex items-center justify-end pr-2 text-white overflow-hidden"
+          style="width: 19%; background: linear-gradient(to right, #006400, #90EE90);">
+          <div class="text-lg">19%</div>
+        </div>
+      </div>
     </div>
   </div>
 </main>
+
+<!-- Moved Sections -->
+<section class="container mx-auto p-6 md:p-8">
+  <!-- Responsive Image Gallery -->
+  <div class="max-w-4xl mx-auto">
+    <div class="flex flex-col md:flex-row gap-4 mt-4 mb-8 content-fade-in">
+      <!-- First Image with Caption -->
+      <div class="flex-1">
+        <img
+          src="/images/myairhat_front.jpg"
+          class="w-full h-auto rounded-xl shadow-lg border border-gray-200"
+          alt="MyAirHat™ on mannequin"
+          loading="lazy"
+        />
+        <p class="text-center mt-3 text-base font-medium text-gray-700">
+          MyAirHat™ Prototype
+        </p>
+      </div>
+      <!-- Second Image with Caption -->
+      <div class="flex-1">
+        <img
+          src="/images/mannequin_n95.jpg"
+          class="w-full h-auto rounded-xl shadow-lg border border-gray-200"
+          alt="Typical N95 Mask on mannequin"
+          loading="lazy"
+        />
+        <p class="text-center mt-3 text-base font-medium text-gray-700">
+          Typical N95 Mask
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional visual divider -->
+  <hr class="my-2 border-gray-300" />
+</section>
