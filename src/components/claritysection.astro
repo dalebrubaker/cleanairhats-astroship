@@ -1,0 +1,64 @@
+---
+// No imports needed for this component yet
+---
+
+<details
+  id="clarity"
+  class="mt-4 w-full group border-b border-gray-200 pb-4 scroll-mt-20"
+>
+  <summary
+    class="flex items-center cursor-pointer text-xl font-semibold text-gray-800 hover:text-blue-600 list-none py-2"
+  >
+    <svg
+      class="w-5 h-5 mr-2 transition-transform duration-300 ease-in-out group-open:rotate-180 flex-shrink-0"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      stroke-width="2"
+    >
+      <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"
+      ></path>
+    </svg>
+    <span>Clarity: See and Be Seen</span>
+  </summary>
+  <div class="mt-2 w-full pl-5 animate-fade-in">
+    <p class="mb-4 text-gray-700">Enjoy clear communication and vision:</p>
+    <ul class="list-disc pl-5 space-y-2 text-gray-700">
+      <li>
+        <strong>Unobstructed vision:</strong> The clear shield provides a wide field
+        of view without the fogging common with masks.
+      </li>
+      <li>
+        <strong>Easy lip reading:</strong> Allows others to read your lips, improving
+        communication accessibility.
+      </li>
+      <li>
+        <strong>Visible facial expressions:</strong> Enables natural social interaction
+        by keeping your facial expressions visible.
+      </li>
+    </ul>
+  </div>
+</details>
+
+<style>
+  details > summary {
+    list-style: none;
+  }
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  details[open] > div {
+    animation: fade-in 0.3s ease-out;
+  }
+</style>

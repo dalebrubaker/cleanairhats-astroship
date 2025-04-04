@@ -1,0 +1,188 @@
+<details class="mt-4 w-full max-w-full group">
+  <summary
+    class="flex items-center cursor-pointer text-lg font-medium text-blue-600 hover:underline"
+  >
+    <svg
+      class="w-4 h-4 mr-2 transition-transform duration-200 group-open:rotate-180 flex-shrink-0"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M19 9l-7 7-7-7"></path>
+    </svg>
+    <span>Independent Lab Testing Results:</span>
+  </summary>
+  <div class="mt-2 w-full">
+    <!-- Explanation lines -->
+    <p class="mb-2 text-sm">
+      The test reports discuss "average reduction %" of the particles, which for
+      a mask is the percentage of particles that are filtered out (trapped in)
+      the mask. But what we really care about is the percentage of airborne
+      particles inhaled, which is 100% minus the average reduction %.
+    </p>
+    <p class="mb-2 text-sm">
+      The table below references four studies that evaluated <strong>real-world</strong>
+      efficiency rather than the <strong>ideal</strong> efficiency that only could be achieved if the mask fit perfectly.
+    </p>
+    <p class="mb-2 text-sm">
+      The first study listed below is the only apples-to-apples test using the
+      same particles and the same test procedure. <strong>The Inhaled % for the N95 mask
+      (57%) is 3 times that of the MyAirHat (19%).</strong>
+    </p>
+
+    <!-- Applying new table styling -->
+    <div class="overflow-x-auto w-full">
+      <table class="min-w-full divide-y divide-gray-200 border border-gray-200">
+        <!-- Removed colgroup -->
+        <thead class="bg-gray-50">
+          <tr>
+            <!-- Standardized th classes -->
+            <th
+              scope="col"
+              class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              >Year</th
+            >
+            <th
+              scope="col"
+              class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              >Tester</th
+            >
+            <th
+              scope="col"
+              class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              >Name</th
+            >
+            <th
+              scope="col"
+              class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              >MyAirHat Efficiency</th
+            >
+            <th
+              scope="col"
+              class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              >MyAirHat Inhaled</th
+            >
+            <th
+              scope="col"
+              class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              >N95 Efficiency</th
+            >
+            <th
+              scope="col"
+              class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              >N95 Inhaled</th
+            >
+            <th
+              scope="col"
+              class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              >Notes</th
+            >
+          </tr>
+        </thead>
+        <tbody class="bg-white divide-y divide-gray-200 text-sm">
+          <tr>
+            <!-- Ensured td padding, kept whitespace-nowrap where appropriate -->
+            <td class="px-4 py-2 whitespace-nowrap">2025</td>
+            <td class="px-4 py-2 whitespace-nowrap">ARE Labs</td>
+            <td class="px-4 py-2 whitespace-nowrap">MyAirHat vs N95 Mask</td>
+            <td class="px-4 py-2 whitespace-nowrap">81%</td>
+            <td class="px-4 py-2 whitespace-nowrap">19%</td>
+            <td class="px-4 py-2 whitespace-nowrap">43%</td>
+            <td class="px-4 py-2 whitespace-nowrap">57%</td>
+            <td class="px-4 py-2 break-words">
+              This is the only apples-to-apples test using the same particles
+              and the same test procedure. Under simulated real-world
+              conditions, the MyAirHat showed greater reduction of particulates
+              compared to the N95 mask.
+              <a
+                href="/docs/ARE Labs - 11024.10 Characterization of The Particle Reduction Efficiency of The MyAirHat & N95 Mask V1.1.pdf"
+                target="_blank"
+                class="text-blue-600 hover:underline ml-2"
+              >
+                See Study
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td class="px-4 py-2 whitespace-nowrap">2025</td>
+            <td class="px-4 py-2 whitespace-nowrap">ARE Labs</td>
+            <td class="px-4 py-2 whitespace-nowrap">MyAirHat</td>
+            <td class="px-4 py-2 whitespace-nowrap">85%</td>
+            <td class="px-4 py-2 whitespace-nowrap">15%</td>
+            <td class="px-4 py-2 whitespace-nowrap"></td>
+            <td class="px-4 py-2 whitespace-nowrap"></td>
+            <td class="px-4 py-2 break-words">
+              From Abstract Page 1: MyAirHat showed efficacy at reducing inert
+              particulate matter under simulated real-world conditions.
+              <a
+                href="/docs/ARE Labs - 11024.10 Characterization of The Particle Reduction Efficiency of The MyAirHat V1.10.pdf"
+                target="_blank"
+                class="text-blue-600 hover:underline ml-2"
+              >
+                See Study
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td class="px-4 py-2 whitespace-nowrap">2020</td>
+            <td class="px-4 py-2 whitespace-nowrap">ARE Labs</td>
+            <td class="px-4 py-2 whitespace-nowrap">Masks and Respirators</td>
+            <td class="px-4 py-2 whitespace-nowrap"></td>
+            <td class="px-4 py-2 whitespace-nowrap"></td>
+            <td class="px-4 py-2 whitespace-nowrap">39%</td>
+            <td class="px-4 py-2 whitespace-nowrap">61%</td>
+            <td class="px-4 py-2 break-words">
+              From Results Page 1: MyAirHat showed efficacy at reducing inert
+              particulate matter in all of the size groups tested under
+              simulated real-world conditions…
+              <a
+                href="/docs/ARE Labs - Novel Methods for Evaluating Facemasks and Respirators as a Non-Pharmaceutical Protective Measure in Preventing Viral Infection - 2020.pdf"
+                target="_blank"
+                class="text-blue-600 hover:underline ml-2"
+              >
+                See Study
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td class="px-4 py-2 whitespace-nowrap">2020</td>
+            <td class="px-4 py-2 whitespace-nowrap">NIH</td>
+            <td class="px-4 py-2 whitespace-nowrap">Mask and Respirators</td>
+            <td class="px-4 py-2 whitespace-nowrap"></td>
+            <td class="px-4 py-2 whitespace-nowrap"></td>
+            <td class="px-4 py-2 whitespace-nowrap">20%</td>
+            <td class="px-4 py-2 whitespace-nowrap">80%</td>
+            <td class="px-4 py-2 break-words">
+              Data from Chart Page 15. Abstract Page 1: While the base
+              filtration efficiency of a material is of primary importance when
+              a perfect seal is possible, ideal fit is not likely to be achieved
+              by the average person preparing to enter a public space or even a
+              healthcare worker without fit-testing before each shift... the
+              filtration efficiency of loosely-fitting masks/respirators against
+              ultrafine particulates can drop by more than 60% when worn
+              compared to the ideal filtration efficiency of the base material.
+              <a
+                href="/docs/nihms-1922526.pdf"
+                target="_blank"
+                class="text-blue-600 hover:underline ml-2"
+              >
+                See Study
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</details>
+
+<style>
+  details[open] summary svg {
+    transform: rotate(180deg) !important;
+  }
+</style>
