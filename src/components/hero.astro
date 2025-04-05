@@ -6,9 +6,7 @@ import { Icon } from "astro-icon/components";
 import StudyDataTable from "@/components/studydatatable.astro";
 ---
 
-<main
-  id="hero"
-  class="grid lg:grid-cols-3 items-stretch lg:gap-x-8 pt-16 md:pt-12">
+<main id="hero" class="grid lg:grid-cols-3 items-stretch lg:gap-x-8 pt-4">
   <div class="lg:col-span-2">
     <h1 class="text-4xl lg:text-5xl xl:text-6xl font-bold font-sans">
       If you need to wear a mask,<br />then you need to try a MyAirHat™
@@ -23,7 +21,7 @@ import StudyDataTable from "@/components/studydatatable.astro";
     <StudyDataTable class="mt-8" />
   </div>
 
-  <div class="mt-8 lg:mt-0 w-full max-w-md">
+  <div class="mt-8 lg:mt-0 w-full max-w-md mx-auto">
     <div class="mb-8">
       <div class="text-2xl font-semibold text-slate-800 mb-1">N95 Mask</div>
       <div class="relative rounded h-8">
@@ -46,40 +44,33 @@ import StudyDataTable from "@/components/studydatatable.astro";
       </div>
     </div>
   </div>
-</main>
 
-<!-- Moved Sections -->
-<section class="container mx-auto p-6 md:p-8">
-  <!-- Responsive Image Gallery -->
-  <div class="max-w-4xl mx-auto">
-    <div class="flex flex-col md:flex-row gap-4 mt-4 mb-8 content-fade-in">
-      <!-- First Image with Caption -->
-      <div class="flex-1">
-        <img
-          src="/images/myairhat_front.jpg"
-          class="w-full h-auto rounded-xl shadow-lg border border-gray-200"
-          alt="MyAirHat™ on mannequin"
-          loading="lazy"
-        />
-        <p class="text-center mt-3 text-base font-medium text-gray-700">
-          MyAirHat™ Prototype
-        </p>
-      </div>
-      <!-- Second Image with Caption -->
-      <div class="flex-1">
-        <img
-          src="/images/mannequin_n95.jpg"
-          class="w-full h-auto rounded-xl shadow-lg border border-gray-200"
-          alt="Typical N95 Mask on mannequin"
-          loading="lazy"
-        />
-        <p class="text-center mt-3 text-base font-medium text-gray-700">
-          Typical N95 Mask
-        </p>
+  <section class="lg:col-span-3 container mx-auto p-6 md:p-8">
+    <div class="max-w-3xl mx-auto">
+      <div class="flex flex-col md:flex-row gap-4 mt-4 mb-8 content-fade-in">
+        <div class="flex-1">
+          <img
+            src="/images/myairhat_front.jpg"
+            class="w-full h-auto rounded-xl shadow-lg border border-gray-200"
+            alt="MyAirHat™ on mannequin"
+            loading="lazy"
+          />
+          <p class="text-center mt-3 text-base font-medium text-gray-700">
+            MyAirHat™ Prototype
+          </p>
+        </div>
+        <div class="flex-1">
+          <img
+            src="/images/mannequin_n95.jpg"
+            class="w-full h-auto rounded-xl shadow-lg border border-gray-200"
+            alt="Typical N95 Mask on mannequin"
+            loading="lazy"
+          />
+          <p class="text-center mt-3 text-base font-medium text-gray-700">
+            Typical N95 Mask
+          </p>
+        </div>
       </div>
     </div>
-  </div>
-
-  <!-- Optional visual divider -->
-  <hr class="my-2 border-gray-300" />
-</section>
+  </section>
+</main>
