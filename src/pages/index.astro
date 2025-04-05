@@ -9,10 +9,8 @@ import Layout from "@/layouts/Layout.astro";
     <Hero />
 
     {/* Added Safety Section */}
-    <section id="safety" class="py-12 md:py-16">
-      {/** Added section wrapper */}
+    <section id="safety" class="py-6">
       <h2 class="text-3xl font-bold mb-6">
-        {/** Changed to h2 */}
         Safety: Proven 3 Times Safer Than N95 Mask
       </h2>
       <div class="mt-2 w-full">
@@ -31,21 +29,20 @@ import Layout from "@/layouts/Layout.astro";
             creates a separated air environment.
           </li>
         </ul>
-          {/* Added contextual link to Science page */}
-          <p class="mt-2 text-gray-700">
-            For a detailed look at the underlying principles and research,
-            <a href="/science" class="text-blue-600 hover:underline"
-              >visit our Science page</a
-            >.
-          </p>
+        <p class="mt-2 text-gray-700">
+          For a detailed look at the underlying principles and research,
+          <a href="/science" class="text-blue-600 hover:underline"
+            >visit our Science page</a
+          >.
+        </p>
         <div class="mt-6">
-          <h3 class="text-lg font-semibold mb-2">
+          <h3 class="text-xl font-semibold mb-3">
             Carbon Dioxide Effects on Submarine-Qualified Sailors
           </h3>
-          <p class="text-gray-600 text-sm">
+          <p class="text-gray-600 text-sm mb-4">
             Ryder et al., Aerospace Medicine and Human Performance (2018)
           </p>
-          <p class="mt-2 text-gray-700">
+          <p class="mt-2 mb-4 text-gray-700">
             A 2018 study showed no significant differences in decision making
             between sailors exposed to 600, 2500, or 15,000 ppm CO₂ for 80
             minutes. <a
@@ -54,7 +51,7 @@ import Layout from "@/layouts/Layout.astro";
               target="_blank">Read the study</a
             >
           </p>
-          <p class="mt-2 text-gray-700">
+          <p class="mt-2 mb-4 text-gray-700">
             Today the U.S. Navy's recommended carbon dioxide exposure limits for
             submarines are 25,000 ppm (2.5%) for periods up to 24 hours, and
             8,000 ppm (0.8%) for durations up to 90 days. (See Table 3-3 at <a
@@ -69,16 +66,12 @@ import Layout from "@/layouts/Layout.astro";
     </section>
 
     {/* Added Importance Section */}
-    <section id="importance" class="py-12 md:py-16 border-t border-gray-200">
-      {/** Added section + top border */}
+    <section id="importance" class="py-6 border-t border-gray-200">
       <h2 class="text-3xl font-bold mb-6">
-        {/** Main heading as h2 */}
         Importance: Why Better Protection Really Matters
       </h2>
       <div class="mt-2 w-full text-gray-700">
-        {/** Base styles */}
-        <h3 class="text-xl font-bold mb-2 text-gray-800">Global Mortality</h3>
-        {/** Changed from h1 */}
+        <h3 class="text-xl font-semibold mb-3">Global Mortality</h3>
         <p class="mb-4"></p>
         <p class="mb-4">
           Respiratory health issues, including diseases caused by respiratory
@@ -178,7 +171,7 @@ import Layout from "@/layouts/Layout.astro";
           </li>
         </ul>
 
-        <p class="text-sm">
+        <p class="text-sm mb-4">
           Addressing these respiratory health challenges requires a multifaceted
           approach, including reducing air pollution, improving indoor air
           quality, promoting vaccination against respiratory pathogens, and
@@ -188,8 +181,7 @@ import Layout from "@/layouts/Layout.astro";
 
         {/* Example Section */}
         <div class="mt-6">
-          <h3 class="text-xl font-bold mb-4 text-gray-800">Example</h3>
-          {/** Changed from h1 */}
+          <h3 class="text-xl font-semibold mb-3">Example</h3>
           <p class="mb-4">
             Because we can't see all the stuff in the air around us, most of us
             have a false sense of security when we are in a room with other
@@ -211,10 +203,7 @@ import Layout from "@/layouts/Layout.astro";
 
         {/* Virus Concentration Section */}
         <div class="mt-6">
-          <h3 class="text-xl font-bold mb-4 text-gray-800">
-            Virus Concentration
-          </h3>
-          {/** Changed from h2 */}
+          <h3 class="text-xl font-semibold mb-3">Virus Concentration</h3>
           <p class="mb-4">
             One study reported the number live copies of the Covid-19 virus in
             the oral fluid to be at least 7 million per milliliter (35 million
@@ -237,10 +226,9 @@ import Layout from "@/layouts/Layout.astro";
 
         {/* Breathing Rate and Exposure Section */}
         <div class="mt-6">
-          <h3 class="text-xl font-bold mb-4 text-gray-800">
+          <h3 class="text-xl font-semibold mb-3">
             Breathing Rate and Exposure
           </h3>
-          {/** Changed from h2 */}
           <p class="mb-4">
             The breathing rate for adults is in the range of 12 to 18 breaths
             per minute. The following example assumes 15. Each time we inhale,
@@ -263,8 +251,7 @@ import Layout from "@/layouts/Layout.astro";
 
         {/* Example Summary Section */}
         <div class="mt-6">
-          <h3 class="text-xl font-bold mb-4 text-gray-800">Example Summary</h3>
-          {/** Changed from h2 */}
+          <h3 class="text-xl font-semibold mb-3">Example Summary</h3>
           <p class="mb-4">
             In this example, based on the extensive real-world testing discussed
             earlier, you would inhale 228 viruses (57% of 400) if you wore an
@@ -280,16 +267,21 @@ import Layout from "@/layouts/Layout.astro";
           </p>
         </div>
 
-      
+        <p class="mt-6 text-sm text-gray-600">
+          For a detailed look at the underlying principles and research,
+          <a href="/science" class="text-blue-600 hover:underline"
+            >visit our Science page</a
+          >.
+        </p>
       </div>
     </section>
 
     {/* Added Clarity Section */}
-    <section id="clarity" class="py-12 md:py-16 border-t border-gray-200">
+    <section id="clarity" class="py-6 border-t border-gray-200">
       <h2 class="text-3xl font-bold mb-6">Clarity: See and Be Seen</h2>
       <div class="mt-2 w-full">
         <p class="mb-4 text-gray-700">Enjoy clear communication and vision:</p>
-        <ul class="list-disc pl-5 space-y-2 text-gray-700">
+        <ul class="list-disc pl-5 space-y-2 text-gray-700 mb-4">
           <li>
             <strong>Unobstructed vision:</strong> The clear shield provides a wide
             field of view without the fogging common with masks.
@@ -307,7 +299,7 @@ import Layout from "@/layouts/Layout.astro";
     </section>
 
     {/* Added Comfort Section */}
-    <section id="comfort" class="py-12 md:py-16 border-t border-gray-200">
+    <section id="comfort" class="py-6 border-t border-gray-200">
       <h2 class="text-3xl font-bold mb-6">Comfort: Breathe Easy</h2>
       <div class="mt-2 w-full text-gray-700">
         <p class="mb-4">
@@ -354,17 +346,17 @@ import Layout from "@/layouts/Layout.astro";
     </section>
 
     {/* Added Practicality Section */}
-    <section id="practicality" class="py-12 md:py-16 border-t border-gray-200">
+    <section id="practicality" class="py-6 border-t border-gray-200">
       <h2 class="text-3xl font-bold mb-6">Practical Design & Everyday Use</h2>
       <div class="mt-2 w-full">
-        <p class="mb-6 text-gray-700">
+        <p class="mb-4 text-gray-700">
           <strong>MyAirHat™</strong> is designed not only to be safer—but also reusable,
           comfortable, and realistic for everyday life.
         </p>
 
         <div class="space-y-6">
           <div>
-            <h3 class="text-xl font-semibold mb-2">Sustainable & Reusable</h3>
+            <h3 class="text-xl font-semibold mb-3">Sustainable & Reusable</h3>
             <ul class="list-disc list-inside text-gray-700">
               <li>
                 Unlike disposable masks that fill up with particles and lose
@@ -389,8 +381,8 @@ import Layout from "@/layouts/Layout.astro";
           </div>
 
           <div>
-            <h3 class="text-xl font-semibold mb-2">Cost-Effective Over Time</h3>
-            <p class="text-gray-700">
+            <h3 class="text-xl font-semibold mb-3">Cost-Effective Over Time</h3>
+            <p class="text-gray-700 mb-4">
               Frequent replacement of disposable or N95-style masks can add up
               quickly. <strong>MyAirHat™ is built to last</strong>, making it a
               more affordable choice over time—especially for those who need
@@ -399,7 +391,7 @@ import Layout from "@/layouts/Layout.astro";
           </div>
 
           <div>
-            <h3 class="text-xl font-semibold mb-2">
+            <h3 class="text-xl font-semibold mb-3">
               Ships Flat, Assembles to Fit
             </h3>
             <ul class="list-disc list-inside text-gray-700">
@@ -425,16 +417,16 @@ import Layout from "@/layouts/Layout.astro";
           </div>
 
           <div>
-            <h3 class="text-xl font-semibold mb-2">
+            <h3 class="text-xl font-semibold mb-3">
               Appearance: Different by Design
             </h3>
-            <p class="text-gray-700">
+            <p class="text-gray-700 mb-4">
               We know MyAirHat™ doesn't look like a typical mask—and that's the
               point. Traditional masks cover the face and muffle the voice.
               MyAirHat™ keeps your face and words visible, making communication
               easier and allowing you to maintain"connection" with others.
             </p>
-            <p class="text-gray-700 mt-2">
+            <p class="text-gray-700 mt-2 mb-4">
               Yes, it looks unusual at first. But it's also expressive, open,
               and honest. <strong
                 >Wearing one shows thoughtfulness and courage</strong
@@ -444,7 +436,7 @@ import Layout from "@/layouts/Layout.astro";
           </div>
 
           <div>
-            <h3 class="text-xl font-semibold mb-2">
+            <h3 class="text-xl font-semibold mb-3">
               Eat & Drink Without Full Exposure
             </h3>
             <ul class="list-disc list-inside text-gray-700">
