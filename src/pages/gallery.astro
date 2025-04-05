@@ -1,0 +1,60 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Container from "@/components/container.astro";
+---
+
+<Layout title="Gallery - CleanAirHats">
+  <Container>
+    <h1 class="text-3xl font-bold my-6">Gallery: Product Views</h1>
+    {/* Original content from gallerysection.astro, without details/summary */}
+    <div class="mt-2 w-full">
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 justify-items-center pt-4">
+        {/* Image 1 */}
+        <div class="text-center">
+          <img
+            src="/images/myairhat_as_shipped.jpg"
+            class="w-full max-w-[300px] h-auto rounded shadow border border-gray-200 mx-auto"
+            alt="MyAirhat as Shipped"
+            loading="lazy"
+          />
+          <p class="mt-2 text-sm text-gray-600">As shipped (2 pieces)</p>
+        </div>
+        {/* Image 2 */}
+        <div class="text-center">
+          <img
+            src="/images/myairhat_left_front.jpg"
+            class="w-full max-w-[300px] h-auto rounded shadow border border-gray-200 mx-auto"
+            alt="Left Front View"
+            loading="lazy"
+          />
+          <p class="mt-2 text-sm text-gray-600">Left Front</p>
+        </div>
+        {/* Image 3 */}
+        <div class="text-center">
+          <img
+            src="/images/myairhat_right_front.jpg"
+            class="w-full max-w-[300px] h-auto rounded shadow border border-gray-200 mx-auto"
+            alt="Right Front View"
+            loading="lazy"
+          />
+          <p class="mt-2 text-sm text-gray-600">Right Front</p>
+        </div>
+        {/* Image 4 */}
+        <div class="text-center">
+          <img
+            src="/images/myairhat_side.jpg"
+            class="w-full max-w-[300px] h-auto rounded shadow border border-gray-200 mx-auto"
+            alt="Side View"
+            loading="lazy"
+          />
+          <p class="mt-2 text-sm text-gray-600">Side</p>
+        </div>
+      </div>
+    </div>
+  </Container>
+</Layout>
+
+<style>
+  /* Styles specific to this page can go here */
+</style>

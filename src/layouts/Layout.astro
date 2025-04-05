@@ -5,6 +5,7 @@ import Navbar from "@/components/navbar/navbar.astro";
 import "@fontsource-variable/inter/index.css";
 import "@fontsource-variable/bricolage-grotesque";
 import "../styles/global.css";
+import { ViewTransitions } from "astro:transitions";
 
 export interface Props {
   title: string;
@@ -54,6 +55,9 @@ const makeTitle = title
         },
       }}
     />
+    <ViewTransitions fallback="none" />
+
+    {/* Alpine.js via CDN - Defer loading */}
   </head>
   <body>
     <Navbar />

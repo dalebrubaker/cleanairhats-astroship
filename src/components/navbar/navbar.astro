@@ -13,14 +13,14 @@ const menuitems = [
   // { title: "Pro Version", badge: true, path: "..." },
 
   // Add links for your sections
-  { title: "Safety", path: "#safety" }, // Assuming id="safety"
-  { title: "Importance", path: "#importance" }, // Assuming id="importance"
-  { title: "Clarity", path: "#clarity" }, // Assuming id="clarity"
-  { title: "Comfort", path: "#comfort" }, // Assuming id="comfort"
-  { title: "Practicality", path: "#practicality" }, // Assuming id="practicality"
-  { title: "Science", path: "#science" }, // Assuming id="science"
-  { title: "Gallery", path: "#gallery" }, // Assuming id="gallery"
-  { title: "About", path: "#about" }, // Assuming id="about"
+  { title: "Safety", path: "/safety" },
+  { title: "Importance", path: "/importance" },
+  { title: "Clarity", path: "/clarity" },
+  { title: "Comfort", path: "/comfort" },
+  { title: "Practicality", path: "/practicality" },
+  { title: "Science", path: "/science" },
+  { title: "Gallery", path: "/gallery" },
+  { title: "About", path: "/about" },
   // Add other links as needed (e.g., external links, contact)
 ];
 ---
@@ -44,15 +44,29 @@ const menuitems = [
       <MenuItems class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0 lg:ml-8">
         <ul class="flex flex-col lg:flex-row lg:gap-3">
           {
-            menuitems.map((item, index) => (
-              <li>
-                <a
-                  href={item.path}
-                  class="flex lg:px-3 py-2 items-center text-black hover:text-black">
-                  <span> {item.title}</span>
-                </a>
-              </li>
-            ))
+            menuitems.map((item) => {
+              const isBasePath = item.path === "/";
+              const isActive = isBasePath
+                ? Astro.url.pathname === "/"
+                : Astro.url.pathname.startsWith(item.path);
+
+              // Define base classes
+              const baseClasses = "flex lg:px-3 py-2 items-center";
+              // Define active state classes
+              const activeStateClasses = isActive
+                ? "font-bold text-blue-600"
+                : "text-black hover:text-blue-700"; // Apply hover only if inactive
+
+              return (
+                <li>
+                  <a
+                    href={item.path}
+                    class={`${baseClasses} ${activeStateClasses}`}>
+                    <span> {item.title}</span>
+                  </a>
+                </li>
+              );
+            })
           }
         </ul>
       </MenuItems>

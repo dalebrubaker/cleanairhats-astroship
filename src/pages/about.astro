@@ -1,57 +1,46 @@
 ---
-import { getCollection } from "astro:content";
-import { Picture } from "astro:assets";
 import Layout from "@/layouts/Layout.astro";
 import Container from "@/components/container.astro";
-import Sectionhead from "@/components/sectionhead.astro";
-
-// Filter team entries with 'draft: false' & date before current date
-const publishedTeamMembers = await getCollection("team", ({ data }) => {
-  return !data.draft && data.publishDate < new Date();
-});
 ---
 
-<Layout title="About">
+<Layout title="About Us - CleanAirHats">
   <Container>
-    <Sectionhead>
-      <Fragment slot="title">About</Fragment>
-      <Fragment slot="desc">We are a small passionate team.</Fragment>
-    </Sectionhead>
-
-    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
-      <h2 class="font-bold text-3xl text-gray-800">
-        Empowering the world with Astro.
-      </h2>
-      <p class="text-lg leading-relaxed text-slate-500">
-        We're a multi-cultural team from around the world! We come from diverse
-        backgrounds, bringing different personalities, experiences and skills to
-        the job. This is what makes our team so special.
-      </p>
-    </div>
-    <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
-      {
-        publishedTeamMembers.map((teamMemberEntry) => (
-          <div class="group">
-            <div class="w-full aspect-square">
-              <Picture
-                src={teamMemberEntry.data.avatar.src}
-                alt={teamMemberEntry.data.avatar.alt}
-                sizes="(max-width: 800px) 100vw, 400px"
-                width={400}
-                height={400}
-                class="w-full rounded-sm transition group-hover:-translate-y-1 group-hover:shadow-xl bg-white object-cover object-center aspect-square"
-              />
-            </div>
-
-            <div class="mt-4 text-center">
-              <h2 class="text-lg text-gray-800">{teamMemberEntry.data.name}</h2>
-              <h3 class="text-sm text-slate-500">
-                {teamMemberEntry.data.title}
-              </h3>
-            </div>
-          </div>
-        ))
-      }
+    <h1 class="text-3xl font-bold my-6">About Us</h1>
+    {/* Original content from aboutsection.astro, without details/summary */}
+    <div class="mt-2 w-full text-gray-700">
+      <section class="mb-8">
+        <p class="text-lg mb-4">
+          We've developed a new approach to respiratory safety: a lightweight,
+          comfortable, and effective protective hat that uses molecular
+          diffusion rather than mechanical filtration. Our mission is to promote
+          this innovative technology and make it available to the public—not for
+          profit, but for the public good. Approximately 8 million people
+          worldwide die each year from respiratory diseases and infections, many
+          of which are linked to exposure to smoke, dust, and airborne
+          pathogens—risks that can be mitigated through effective protective
+          measures like the MyAirHat™. The number is greatly increased during
+          pandemics, which seem always to be occurring somewhere in the world.
+        </p>
+        <p class="text-lg mb-4">
+          We license and distribute the Clean Air Hat technology freely to
+          manufacturers and suppliers so that people around the world can
+          benefit. Our work goes beyond the technology. We educate communities,
+          collaborate with health professionals and researchers, and provide
+          practical resources to help people stay informed and safe. We're a
+          nonprofit organization dedicated to education, public health, and
+          scientific collaboration.
+        </p>
+        <p class="text-lg mb-4">
+          Clean Air Hats, Inc. plans to operate as a 501(c)(3) nonprofit (as
+          soon as we get IRS approval). We do not support political candidates
+          or campaigns. All income is reinvested into our mission—never for
+          private gain.
+        </p>
+      </section>
     </div>
   </Container>
 </Layout>
+
+<style>
+  /* Styles specific to this page can go here */
+</style>

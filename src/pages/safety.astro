@@ -1,0 +1,62 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Container from "@/components/container.astro";
+import StudyDataTable from "@/components/studydatatable.astro";
+---
+
+<Layout title="Safety - CleanAirHats">
+  <Container>
+    <h1 class="text-3xl font-bold my-6">
+      Safety: Proven 3 Times Safer Than N95 Mask
+    </h1>
+    <div class="mt-2 w-full">
+      <p class="mb-4 text-gray-700">
+        MyAirHat™ offers significant safety advantages:
+      </p>
+      <ul class="list-disc pl-5 space-y-2 mb-4 text-gray-700">
+        <li>
+          <strong>Integral face shield protects eyes:</strong> Provides built-in
+          eye protection against droplets and aerosols that happen when others cough
+          and sneeze.
+        </li>
+        <li>
+          <strong>No leaks due to poor fit:</strong> Unlike masks that rely on a
+          tight seal against the face (which is often imperfect), MyAirHat™ creates
+          a separated air environment.
+        </li>
+      </ul>
+      <StudyDataTable />
+      <div class="mt-6">
+        <h3 class="text-lg font-semibold mb-2">
+          Carbon Dioxide Effects on Submarine-Qualified Sailors
+        </h3>
+        <p class="text-gray-600 text-sm">
+          Ryder et al., Aerospace Medicine and Human Performance (2018)
+        </p>
+        <p class="mt-2 text-gray-700">
+          A 2018 study showed no significant differences in decision making
+          between sailors exposed to 600, 2500, or 15,000 ppm CO₂ for 80
+          minutes. <a
+            href="https://pubmed.ncbi.nlm.nih.gov/29789085/"
+            class="text-blue-600 hover:underline"
+            target="_blank">Read the study</a
+          >
+        </p>
+        <p class="mt-2 text-gray-700">
+          Today the U.S. Navy's recommended carbon dioxide exposure limits for
+          submarines are 25,000 ppm (2.5%) for periods up to 24 hours, and 8,000
+          ppm (0.8%) for durations up to 90 days. (See Table 3-3 at <a
+            href="https://nap.nationalacademies.org/read/11170/chapter/5#59"
+            class="text-blue-600 hover:underline"
+            target="_blank">nap.nationalacademies.org/read/11170/chapter/5#59</a
+          >.)
+        </p>
+      </div>
+    </div>
+  </Container>
+</Layout>
+
+<style>
+  /* Styles specific to this page can go here */
+  /* Or keep using global styles */
+</style>
