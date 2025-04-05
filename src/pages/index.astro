@@ -2,6 +2,9 @@
 import Container from "@/components/container.astro";
 import Hero from "@/components/hero.astro";
 import Layout from "@/layouts/Layout.astro";
+import ScrollSpyNav from "@/components/scrollspynav.astro";
+
+// Removed sections array definition from here
 ---
 
 <Layout title="CleanAirHats - Breathe Easier">
@@ -459,4 +462,7 @@ import Layout from "@/layouts/Layout.astro";
       </div>
     </section>
   </Container>
+
+  {/* Add the component tag */}
+  <ScrollSpyNav />
 </Layout>
