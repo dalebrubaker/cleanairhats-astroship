@@ -3,24 +3,12 @@ import { Picture } from "astro:assets";
 // import heroImage from "@/assets/hero.png"; // Removed unused import
 import Link from "@/components/ui/link.astro";
 import { Icon } from "astro-icon/components";
+import StudyDataTable from "@/components/studydatatable.astro";
 ---
 
 <main
   id="hero"
   class="grid lg:grid-cols-3 items-stretch lg:gap-x-8 pt-16 md:pt-12">
-  <!-- Removed the Picture component section -->
-  <!-- 
-  <div class="py-6 md:order-1 hidden md:block">
-    <Picture
-      src={heroImage}
-      alt="MyAirHat illustration"
-      widths={[200, 400, 600]}
-      sizes="(max-width: 800px) 100vw, 620px"
-      loading="eager"
-      format="avif"
-    />
-  </div>
-  -->
   <div class="lg:col-span-2">
     <h1 class="text-4xl lg:text-5xl xl:text-6xl font-bold font-sans">
       If you need to wear a mask,<br />then you need to try a MyAirHat™
@@ -32,6 +20,7 @@ import { Icon } from "astro-icon/components";
         particles inhaled.</i
       >
     </p>
+    <StudyDataTable class="mt-8" />
   </div>
 
   <div class="mt-8 lg:mt-0 w-full max-w-md">
