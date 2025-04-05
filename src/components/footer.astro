@@ -1,19 +1,29 @@
-<footer class="my-20">
-  <p class="text-center text-sm text-black">
-    Copyright © {new Date().getFullYear()} Astroship. All rights reserved.
-  </p>
-  <!--
-    Can we ask you a favor 🙏
-    Please keep this backlink on your website if possible.
-    or Purchase a commercial license from https://web3templates.com
-  -->
-  <p class="text-center text-xs text-black mt-1">
-    Made by <a
-      href="https://web3templates.com"
-      target="_blank"
-      rel="noopener"
-      class="hover:underline">
-      Web3Templates
-    </a>
-  </p>
+---
+
+---
+
+<footer class="bg-white text-slate-700 py-4 px-6 border-t">
+  <div
+    class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6">
+    {/* Left side: Logo and Copyright */}
+    <div class="flex items-center gap-3">
+      <a href="/">
+        <img
+          src="/images/logo.png"
+          alt="CleanAirHats Logo"
+          class="h-12 w-auto"
+        />
+      </a>
+      <p class="text-sm text-slate-500">
+        © 2025 Clean Air Hats. All rights reserved.
+      </p>
+    </div>
+
+    {/* Right side: Contact Link */}
+    <div class="text-sm">
+      <a href="/contactform" class="hover:text-blue-600 transition"
+        >Contact Us</a
+      >
+    </div>
+  </div>
 </footer>
