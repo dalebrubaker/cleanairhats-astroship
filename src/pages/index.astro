@@ -1,19 +1,7 @@
 ---
 import Container from "@/components/container.astro";
-// import Cta from "@/components/cta.astro";
-// import Features from "@/components/features.astro";
-// import TemplateHero from "@/components/template-hero.astro";
 import Hero from "@/components/hero.astro";
-// import Logos from "@/components/logos.astro";
 import Layout from "@/layouts/Layout.astro";
-// import SafetySection from "@/components/safetysection.astro";
-// import ImportanceSection from "@/components/importancesection.astro";
-// import ClaritySection from "@/components/claritysection.astro";
-// import ComfortSection from "@/components/comfortsection.astro";
-// import PracticalitySection from "@/components/practicalitysection.astro";
-// import ScienceSection from "@/components/sciencesection.astro";
-// import GallerySection from "@/components/gallerysection.astro";
-// import AboutSection from "@/components/aboutsection.astro";
 ---
 
 <Layout title="CleanAirHats - Breathe Easier">
@@ -43,6 +31,13 @@ import Layout from "@/layouts/Layout.astro";
             creates a separated air environment.
           </li>
         </ul>
+          {/* Added contextual link to Science page */}
+          <p class="mt-2 text-gray-700">
+            For a detailed look at the underlying principles and research,
+            <a href="/science" class="text-blue-600 hover:underline"
+              >visit our Science page</a
+            >.
+          </p>
         <div class="mt-6">
           <h3 class="text-lg font-semibold mb-2">
             Carbon Dioxide Effects on Submarine-Qualified Sailors
@@ -284,6 +279,8 @@ import Layout from "@/layouts/Layout.astro";
             succumbing to smoke inhalation or survival.
           </p>
         </div>
+
+      
       </div>
     </section>
 
