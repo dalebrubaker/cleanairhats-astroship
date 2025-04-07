@@ -21,6 +21,7 @@ const config = {
   plugins: [
     // Add any Tailwind plugins used by the template or your old site here
     // e.g., require('@tailwindcss/typography'),
+    require("@tailwindcss/typography"), // Enable the typography plugin
   ],
 };
 
